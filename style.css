@@ -1,0 +1,307 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.ex-5-square {
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+}
+.ex-10-icon {
+    font-size: 60px;
+}
+.ex-11-icon {
+    font-size: 60px;
+
+}
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+
+/* start */
+
+
+/* 1 */
+.ex-1-square:hover{
+    background-color: red;
+    transition: all 2s;
+}
+/* 2 */
+.ex-2-square:active{
+    width: 100%;
+    transition: all 2s;
+}
+
+/* 3 */
+.ex-3-square:hover{
+    border-radius: 50%;
+    transition: all 2s;
+}
+
+/* 4 */
+
+.ex-4-square:hover{
+    opacity: 0;
+    transition: 2s;
+}
+
+/* 5 */
+
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+
+.ex-5-square:active{
+    width: 20px;
+    height: 20px;
+    transition: 2s;
+}
+
+/* 6 */
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+    transition: all 2s;
+}
+
+/* 7 */
+
+.ex-7-img:hover{
+    filter: grayscale(100%) blur(2px);
+    transition: all 2s;
+}
+
+/* 8 */
+
+.ex-8-img:hover{
+    filter: grayscale(100%) blur(1px);
+    border-radius: 20px;
+    transition: all 2s;
+}
+
+/* 9 */
+
+.ex-9-img:hover{
+    filter: grayscale(100%) blur(1px);
+    border-radius: 20px;
+    width: 600px;
+    transition: all 2s;
+}
+
+/* 10 */
+
+.ex-10-icon {
+    animation-duration: infinite;
+    animation-name: floating-ball-model-1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: floating-ball-model-1;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: floating-ball-model-1;
+    -moz-animation-duration: 7s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: floating-ball-model-1;
+    -ms-animation-duration: 7s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: floating-ball-model-1;
+    -o-animation-duration: 7s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+@keyframes floating-ball-model-1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+
+/* 11 */
+
+.ex-11-icon:hover {
+    animation-duration: infinite;
+    animation-name: floating-ball-model-2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: floating-ball-model-2;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: floating-ball-model-2;
+    -moz-animation-duration: 7s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: floating-ball-model-2;
+    -ms-animation-duration: 7s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: floating-ball-model-2;
+    -o-animation-duration: 7s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+@keyframes floating-ball-model-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% { 
+        transform: rotate(360deg);
+    }
+    100% { 
+        transform: rotate(0deg);
+    }
+}
+
+/* 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveTopWhite 2s linear;
+}
+@keyframes moveTopWhite {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moveBottomWhite 2s linear;
+}
+@keyframes moveBottomWhite {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+/* 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: moveTopWhiteCompletely 2s linear;
+}
+@keyframes moveTopWhiteCompletely {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: moveBottomWhiteCompletely 2s linear;
+}
+@keyframes moveBottomWhiteCompletely {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
